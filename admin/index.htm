@@ -1,0 +1,1259 @@
+﻿
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="fontiran.com:license" content="Y68A9">
+<link rel="icon" href="../static/image/favicon.ico" type="image/ico">
+
+<!-- Bootstrap -->
+<link href="../static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../static/vendors/bootstrap-rtl/dist/css/bootstrap-rtl.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="../static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- NProgress -->
+<link href="../static/vendors/nprogress/nprogress.css" rel="stylesheet">
+<!-- bootstrap-progressbar -->
+<link href="../static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+<!-- iCheck -->
+<link href="../static/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+<!-- bootstrap-daterangepicker -->
+<link href="../static/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+<!-- PNotify -->
+<link href="../static/vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+<link href="../static/vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+<link href="../static/vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+
+<!-- Custom Theme Style -->
+<link href="../static/vendors/build/custom.min.css" rel="stylesheet">
+<link href="../static/vendors/custom.css" rel="stylesheet">
+    
+    <link href="../static/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/flags/sprite.css">
+
+    <title>
+    داشبورد
+</title>
+</head>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        
+<div class="col-md-3 left_col hidden-print">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="index.htm" class="site_title"><i class="fa fa-paw"></i> <span>پنل مدیریت</span></a>
+                </div>
+                <div class="clearfix"></div>
+                <!-- menu profile quick info -->
+                <div class="profile clearfix">
+                    <div class="profile_pic">
+                        
+                            <img src="../static/image/admin/user.png" alt="..." class="img-circle profile_img">
+                        
+                    </div>
+                    <div class="profile_info">
+                        <span>خوش آمدید,</span>
+                        <h2>مدیریت سایت</h2>
+                    </div>
+                </div>
+                <!-- /menu profile quick info -->
+                <br>
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>عمومی</h3>
+                        <ul class="nav side-menu">
+                            <li><a href="index.htm"><i class="fa fa-dashboard"></i> داشبورد </a></li>
+                            <li><a><i class="fa fa-edit"></i> وبلاگ <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../user/without-access.html">پست ها</a></li>
+                                    <li><a href="../user/without-access.html">پست جدید</a></li>
+                                    <li><a href="../user/without-access.html">نظرات</a></li>
+                                    <li><a href="../user/without-access.html">دسته بندی ها</a></li>
+                                    <li><a href="../user/without-access.html">دسته بندی جدید</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-shopping-cart"></i> فروشگاه <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../user/without-access.html">محصولات</a></li>
+                                    <li><a href="../user/without-access.html">محصول جدید</a></li>
+                                    <li><a href="../user/without-access.html">روش های حمل و نقل</a></li>
+                                    <li><a href="../user/without-access.html">رنگ ها و سایز ها</a></li>
+                                    <li><a href="../user/without-access.html">دسته بندی ها</a></li>
+                                    <li><a href="../user/without-access.html">برند ها</a></li>
+                                    <li><a href="../user/without-access.html">گارانتی ها</a></li>
+                                    <li><a href="../user/without-access.html">نظرات</a></li>
+                                    <li><a href="../user/without-access.html">پرسش ها</a></li>
+                                    <li><a href="../user/without-access.html">سفارش ها</a></li>
+                                    <li><a href="../user/without-access.html">کد های تخفیف</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-bar-chart-o"></i> گزارش ها <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../user/without-access.html">گزارش کار کارکنان</a></li>
+                                    <li><a href="../user/without-access.html">گزارش محصولات</a></li>
+                                    <li><a href="../user/without-access.html">گزارش فروش</a></li>
+                                    <li><a href="../user/without-access.html">گزارش بازدید ها</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-user"></i> کاربران <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../user/without-access.html">لیست کاربران سایت</a></li>
+                                    <li><a href="../user/without-access.html">ثبت نام کاربر جدید</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-comments"></i> پیام ها <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../user/without-access.html">ارتباط با ما</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-gear"></i> تنظیمات <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../user/without-access.html">تنظیمات عمومی</a></li>
+                                    <li><a href="../user/without-access.html">سوالات متداول</a></li>
+                                    <li><a href="../user/without-access.html">شرایط و مقررات</a></li>
+                                    <li><a href="../user/without-access.html">لیست اعلان ها</a></li>
+                                </ul>
+                            </li>
+                            <li><a data-toggle="modal" data-target=".maintenance-modal-sm"><i class="fa fa-laptop"></i> حالت بروزرسانی سایت 
+                                <span class="label label-danger pull-left">غیرفعال</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /sidebar menu -->
+                <!-- /menu footer buttons -->
+                <div class="sidebar-footer hidden-small">
+                    <a data-toggle="tooltip" data-placement="top" title="تنظیمات" href="../user/without-access.html">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="تمام صفحه" onclick="toggleFullScreen();">
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="قفل" class="lock_btn">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="خروج" href="../index.htm">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- /menu footer buttons -->
+            </div>
+        </div>
+        <div class="modal fade maintenance-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title">حالت بروزرسانی وبسایت</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>با زدن دکمه تغییر وضعیت شما وضعیت حالت بروزرسانی را تغییر خواهید داد ، تمامی صفحات وبسایت برای افراد غیر کارمند قفل خواهد شد</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">انصراف</button>
+                        <a href="../user/without-access.html" class="btn btn-primary">تغییر وضعیت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- top navigation -->
+        <!-- top navigation -->
+
+<div class="top_nav hidden-print">
+    <div class="nav_menu">
+        <nav>
+            <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        
+                            <img src="../static/image/admin/user.png" alt="">مدیریت سایت
+                        
+                        <span class=" fa fa-angle-down"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                        <li><a href="../index.htm" target="_blank"> مشاهده سایت</a></li>
+                        <li>
+                            <a href="../user/without-access.html">
+                                <span>تنظیمات</span>
+                            </a>
+                        </li>
+                        <li><a href="../index.htm"><i class="fa fa-sign-out pull-right"></i> خروج</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="badge bg-green">5</span>
+                    </a>
+                    <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                        
+                        <li>
+                            <a href="../user/without-access.html">
+                                <span class="image">
+                                    
+                                        <img src="../static/image/admin/user.png" alt="Profile Image">
+                                    
+                                </span>
+                                <span>
+                                    <span>مدیریت سایت</span>
+                                    <span class="time">2 ساعت،30 دقیقه پیش</span>
+                                </span>
+                                <span class="message">
+                                    پرسش جدید برای محصول با عنوان ساعت هوشمند سامسونگ  ثبت شد 
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="../user/without-access.html">
+                                <span class="image">
+                                    
+                                        <img src="../static/image/admin/user.png" alt="Profile Image">
+                                    
+                                </span>
+                                <span>
+                                    <span>مدیریت سایت</span>
+                                    <span class="time">2 ساعت،30 دقیقه پیش</span>
+                                </span>
+                                <span class="message">
+                                    پرسش جدید برای محصول با عنوان ساعت هوشمند سامسونگ  ثبت شد 
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="../user/without-access.html">
+                                <span class="image">
+                                    
+                                        <img src="../static/image/admin/user.png" alt="Profile Image">
+                                    
+                                </span>
+                                <span>
+                                    <span>مدیریت سایت</span>
+                                    <span class="time">2 ساعت،46 دقیقه پیش</span>
+                                </span>
+                                <span class="message">
+                                    دیدگاه جدید برای محصول با عنوان ساعت هوشمند سامسونگ  ثبت شد 
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="../user/without-access.html">
+                                <span class="image">
+                                    
+                                        <img src="../static/image/admin/user.png" alt="Profile Image">
+                                    
+                                </span>
+                                <span>
+                                    <span>مدیریت سایت</span>
+                                    <span class="time">2 ساعت،53 دقیقه پیش</span>
+                                </span>
+                                <span class="message">
+                                    دیدگاه جدید در وبلاگ با عنوان راهنمای خرید لپ‌تاپ؛ ثبت شد 
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="../user/without-access.html">
+                                <span class="image">
+                                    
+                                        <img src="../static/image/admin/user.png" alt="Profile Image">
+                                    
+                                </span>
+                                <span>
+                                    <span>مدیریت سایت</span>
+                                    <span class="time">2 ساعت،53 دقیقه پیش</span>
+                                </span>
+                                <span class="message">
+                                    دیدگاه جدید در وبلاگ با عنوان راهنمای خرید لپ‌تاپ؛ ثبت شد 
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <div class="text-center">
+                                <a href="../user/without-access.html">
+                                    <strong>مشاهده تمام اعلان ها</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const socket = new WebSocket('ws://' + window.location.host + '/ws/notifications/');
+        const notificationList = document.getElementById('menu1');
+        const notificationCount = document.querySelector('.badge.bg-green');
+
+        if (!notificationList || !notificationCount) {
+            console.error('Notification elements not found');
+            return;
+        }
+
+        socket.onmessage = function(e) {
+            const data = JSON.parse(e.data);
+
+            // Create new notification item
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <a href="${data.link}">
+                    <span class="image">
+                        <img src="${data.user_avatar}" alt="Profile Image"/>
+                    </span>
+                    <span>
+                        <span>${data.user_name}</span>
+                        <span class="time">همین الان</span>
+                    </span>
+                    <span class="message">
+                        ${data.message}
+                    </span>
+                </a>
+            `;
+
+            // Add new notification to the list
+            const firstNotification = notificationList.querySelector('li:not(:last-child)');
+            if (firstNotification) {
+                notificationList.insertBefore(li, firstNotification);
+            } else {
+                notificationList.insertBefore(li, notificationList.lastElementChild);
+            }
+
+            // Update notification count
+            notificationCount.textContent = parseInt(notificationCount.textContent) + 1;
+
+            // Show a toast notification (assuming you have PNotify library loaded)
+            if (typeof PNotify !== 'undefined') {
+                new PNotify({title: 'اطلاعیه', text: data.message, type: 'info', styling: 'bootstrap3'});
+            }
+        };
+
+        socket.onclose = function(e) {
+            console.error('Chat socket closed unexpectedly');
+        };
+    });
+</script>
+<!-- /top navigation -->
+
+        <!-- /top navigation -->
+
+        <!-- page content -->
+
+        
+    <div class="right_col" role="main">
+        <!-- top tiles -->
+        <div class="row tile_count">
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> مجموع کاربران</span>
+                <div class="count green persian">1</div>
+                <span class="count_bottom">تعداد کاربران ثبت نام شده</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-cart-plus"></i> مجموع فروش</span>
+                <div class="count persian">4</div>
+                <span class="count_bottom">تعداد دفعات محصولات فروش رفته</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-eye"></i> مجموع بازدید</span>
+                <div class="count green persian">1</div>
+                <span class="count_bottom">تعداد کل بازدید های وبسایت</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-shopping-bag"></i> مجموع محصول</span>
+                <div class="count persian">6</div>
+                <span class="count_bottom">تعداد کلی محصولات</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-edit"></i> مجموع مقاله</span>
+                <div class="count green persian">4</div>
+                <span class="count_bottom">تعداد مقالات پست شده در وبلاگ</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-comment"></i> مجموع دیدگاه</span>
+                <div class="count persian">3</div>
+                <span class="count_bottom">مجموع دیدگاه در وبلاگ و فروشگاه</span>
+            </div>
+        </div>
+        <!-- /top tiles -->
+    <h4> امروز دوشنبه، ۰۶ اسفند ۱۴۰۳</h4>
+        <div class="row">
+            <!-- graph -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel tile fixed_height_390 overflow_hidden">
+                    <div class="x_title">
+                        <h2>پرفروش ترین محصولات</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div id="graph_bar" style="width:100%; height:280px; direction: ltr;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel tile fixed_height_390 overflow_hidden">
+                    <div class="x_title">
+                        <h2>وضعیت سفارشات فروشگاه</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div class="">
+                            <div class="row">
+                                <div class="animated flipInY col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="tile-stats">
+                                        <div class="col-md-4">
+                                            <i class="fa fa-line-chart fa-4x green pt_10"></i>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4>حاصل فروش کل</h4>
+                                            <a>ماه فعلی</a>
+                                            <p class="persian">۶۳,۱۴۲,۵۰۰ تومان</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="animated flipInY col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="tile-stats">
+                                        <div class="col-md-4">
+                                            <i class="fa fa-cubes fa-4x blue pt_10"></i>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4>پرفروش ترین محصول</h4>
+                                            
+                                            <a href="../shop/ppk-11/%D8%AF%D8%B3%D8%AA%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%BE%D9%84%DB%8C-%D8%A7%D8%B3%D8%AA%DB%8C%D8%B4%D9%86-5-%D8%B3%D9%88%D9%86%DB%8C-%D9%85%D8%AF%D9%84-dalsense-wirlesese.html">دسته بازی پلی استیش…</a>
+                                            <p class="persian">با 1 فروش</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="animated flipInY col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="tile-stats">
+                                        <div class="icon"><i class="fa fa-exclamation-circle" style="color: orange"></i></div>
+                                        <div class="count persian">4</div>
+                                        <h3>آماده بررسی</h3>
+                                    </div>
+                                </div>
+                                <div class="animated flipInY col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="tile-stats">
+                                        <div class="icon"><i class="fa fa-truck" style="color: blue"></i>
+                                        </div>
+                                        <div class="count persian">0</div>
+                                        <h3>در حال ارسال</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="animated flipInY col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="tile-stats">
+                                        <div class="icon"><i class="fa fa-times-circle" style="color: red"></i></div>
+                                        <div class="count persian">0</div>
+                                        <h3>لغو شده</h3>
+                                    </div>
+                                </div>
+                                <div class="animated flipInY col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="tile-stats">
+                                        <div class="icon"><i class="fa fa-check-circle" style="color: green"></i>
+                                        </div>
+                                        <div class="count persian">0</div>
+                                        <h3>کامل شده</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="x_panel tile fixed_height_320">
+                <div class="x_title">
+                    <h2>6 محصول مورد علاقه کاربران</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">تنظیمات 1</a>
+                                </li>
+                                <li><a href="#">تنظیمات 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <h4>بر اساس سیستم رای دهی در نظرات محصولات</h4>
+                    
+                    	<div class="widget_summary pb_5">
+                            <div class="w_left w_25 pct-orange">
+                                <i class="fa fa-star star-filled fa-lg"></i><i class="fa fa-star star-filled fa-lg"></i><i class="fa fa-star star-filled fa-lg"></i><i class="fa fa-star star-filled fa-lg"></i><i class="fa fa-star star-filled fa-lg"></i>
+                            </div>
+                            <div class="w_center w_55">
+                                <span><a href="../shop/ppk-14/%D8%B3%D8%A7%D8%B9%D8%AA-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-watch6-classic-47mm.html">ساعت هوشمند سامسونگ مدل Galax…</a></span>
+                            </div>
+                            <div class="w_right w_20 pct-orange">
+                                <span class="persian">5.0</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    
+                    	<div class="widget_summary pb_5">
+                            <div class="w_left w_25 pct-orange">
+                                <i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i>
+                            </div>
+                            <div class="w_center w_55">
+                                <span><a href="../shop/ppk-16/%D8%AA%D9%84%D9%88%DB%8C%D8%B2%DB%8C%D9%88%D9%86-%D8%A7%D9%84-%D8%A7%DB%8C-%D8%AF%DB%8C-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-50nu7900-%D8%B3%D8%A7%DB%8C%D8%B2-55-%D8%A7%DB%8C%D9%86%DA%86.html">تلویزیون ال ای دی هوشمند سامس…</a></span>
+                            </div>
+                            <div class="w_right w_20 pct-orange">
+                                <span class="persian">0.0</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    
+                    	<div class="widget_summary pb_5">
+                            <div class="w_left w_25 pct-orange">
+                                <i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i>
+                            </div>
+                            <div class="w_center w_55">
+                                <span><a href="../shop/ppk-12/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a55-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-256-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-8-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88%DB%8C%D8%AA%D9%86%D8%A7%D9%85.html">گوشی موبایل سامسونگ مدل Galax…</a></span>
+                            </div>
+                            <div class="w_right w_20 pct-orange">
+                                <span class="persian">0.0</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    
+                    	<div class="widget_summary pb_5">
+                            <div class="w_left w_25 pct-orange">
+                                <i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i>
+                            </div>
+                            <div class="w_center w_55">
+                                <span><a href="../shop/ppk-13/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a15-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-128-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-6-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88%DB%8C%D8%AA%D9%86%D8%A7%D9%85.html">گوشی موبایل سامسونگ مدل Galax…</a></span>
+                            </div>
+                            <div class="w_right w_20 pct-orange">
+                                <span class="persian">0.0</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    
+                    	<div class="widget_summary pb_5">
+                            <div class="w_left w_25 pct-orange">
+                                <i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i>
+                            </div>
+                            <div class="w_center w_55">
+                                <span><a href="../shop/ppk-11/%D8%AF%D8%B3%D8%AA%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%BE%D9%84%DB%8C-%D8%A7%D8%B3%D8%AA%DB%8C%D8%B4%D9%86-5-%D8%B3%D9%88%D9%86%DB%8C-%D9%85%D8%AF%D9%84-dalsense-wirlesese.html">دسته بازی پلی استیشن 5 سونی م…</a></span>
+                            </div>
+                            <div class="w_right w_20 pct-orange">
+                                <span class="persian">0.0</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    
+                    	<div class="widget_summary pb_5">
+                            <div class="w_left w_25 pct-orange">
+                                <i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i><i class="fa fa-star-o star-filled fa-lg"></i>
+                            </div>
+                            <div class="w_center w_55">
+                                <span><a href="../shop/ppk-15/%D8%AA%DB%8C-%D8%B4%D8%B1%D8%AA-%D8%A2%D8%B3%D8%AA%DB%8C%D9%86-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%D9%85%D8%B1%D8%AF%D8%A7%D9%86%D9%87.html">تی شرت آستین کوتاه مردانه</a></span>
+                            </div>
+                            <div class="w_right w_20 pct-orange">
+                                <span class="persian">0.0</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="x_panel tile fixed_height_320 overflow_hidden">
+                <div class="x_title">
+                    <h2>پراستفاده ترین سیستم عامل ها</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <table class="" style="width:100%">
+                        <tr>
+                            <th style="width:37%;">
+                                <p></p>
+                            </th>
+                            <th>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                    <p class="">سیستم عامل</p>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                    <p class="" style="text-align: left;">استفاده</p>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+                            </td>
+                            <td>
+                                <table class="tile_info">
+                                    
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <i class="fa fa-square pct-green"></i>windows
+                                                </p>
+                                            </td>
+                                            <td class="persian">81%</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <i class="fa fa-square pct-purple"></i>android
+                                                </p>
+                                            </td>
+                                            <td class="persian">0%</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <i class="fa fa-square pct-red"></i>ios
+                                                </p>
+                                            </td>
+                                            <td class="persian">0%</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <i class="fa fa-square pct-orange"></i>mac
+                                                </p>
+                                            </td>
+                                            <td class="persian">0%</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <i class="fa fa-square pct-blue"></i>linux
+                                                </p>
+                                            </td>
+                                            <td class="persian">0%</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <i class="fa fa-square pct-gray"></i>other
+                                                </p>
+                                            </td>
+                                            <td class="persian">18%</td>
+                                        </tr>
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="x_panel tile fixed_height_320">
+                <div class="x_title">
+                    <h2>وضعیت تنظیمات وبسایت</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="dashboard-widget-content">
+                        <ul class="quick-list">
+                            <li><i class="fa fa-check" style="color: green;"></i><a href="../user/without-access.html">تکمیل تنظیمات عمومی</a></li>
+                            <li><i class="fa fa-check" style="color: green;"></i><a href="../user/without-access.html">ثبت عکس در اسلایدر</a></li>
+                            <li><i class="fa fa-check" style="color: green;"></i><a href="../user/without-access.html">ثبت لینک شبکه اجتماعی</a></li>
+                            <li><i class="fa fa-check" style="color: green;"></i><a href="../user/without-access.html">انتخاب برند نمایشی</a></li>
+                            <li><i class="fa fa-check" style="color: green;"></i><a href="../user/without-access.html">ثبت سوالات متداول</a></li>
+                            <li><i class="fa fa-check" style="color: green;"></i><a href="../user/without-access.html">ثبت یک نماد اعتماد</a></li>
+                        </ul>
+                        <div class="sidebar-widget">
+                            <h4>تکمیل مشخصات</h4>
+                            <canvas width="150" height="80" id="chart_gauge_01" class="" style="width: 160px; height: 100px;"></canvas>
+                            <div class="goal-wrapper">
+                                <span class="gauge-value pull-left">%</span>
+                                <span id="gauge-text" class="gauge-value pull-left">0</span>
+                                <span id="goal-text" class="goal-value pull-right">%100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>فعالیت های اخیر
+                            <small><a href="../user/without-access.html">نمایش همه</a></small>
+                        </h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div class="dashboard-widget-content">
+                            <ul class="list-unstyled timeline widget">
+                            
+                                <li>
+                                    <div class="block">
+                                        <div class="block_content">
+                                            <h2 class="title">
+                                                <a>بروزرسانی </a>
+                                            </h2>
+                                            <div class="byline">
+                                                <span class="persian">2 ساعت پیش</span> توسط <a>مدیریت سایت</a>
+                                            </div>
+                                            <p class="excerpt persian"> دسته بندی لوازم خانگی با شناسه 7</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <div class="block">
+                                        <div class="block_content">
+                                            <h2 class="title">
+                                                <a>بروزرسانی </a>
+                                            </h2>
+                                            <div class="byline">
+                                                <span class="persian">2 ساعت پیش</span> توسط <a>مدیریت سایت</a>
+                                            </div>
+                                            <p class="excerpt persian"> دسته بندی مد و پوشاک با شناسه 4</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <div class="block">
+                                        <div class="block_content">
+                                            <h2 class="title">
+                                                <a>بروزرسانی </a>
+                                            </h2>
+                                            <div class="byline">
+                                                <span class="persian">2 ساعت پیش</span> توسط <a>مدیریت سایت</a>
+                                            </div>
+                                            <p class="excerpt persian"> دسته بندی کالا دیجیتال با شناسه 1</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <div class="block">
+                                        <div class="block_content">
+                                            <h2 class="title">
+                                                <a>بروزرسانی تنظیمات</a>
+                                            </h2>
+                                            <div class="byline">
+                                                <span class="persian">2 ساعت پیش</span> توسط <a>مدیریت سایت</a>
+                                            </div>
+                                            <p class="excerpt persian">تنظیمات پرسش آیا تعداد خرید از یک کالا محدودیتی دارد؟ و پاسخ بله. شما تنها میتوانید به تعدادی که هنگام ثبت سفارش به شما دسترسی داده شده است ، خرید انجام دهید. خریدهای تعدادی پس از ثبت نهایی بررسی و در صورت امکان تایید خواهد شد.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <div class="block">
+                                        <div class="block_content">
+                                            <h2 class="title">
+                                                <a>درج تنظیمات</a>
+                                            </h2>
+                                            <div class="byline">
+                                                <span class="persian">2 ساعت پیش</span> توسط <a>مدیریت سایت</a>
+                                            </div>
+                                            <p class="excerpt persian">تنظیمات پرسش چطور میتوانم پس از ثبت سفارش آدرس تحویل سفارش را ویرایش کنم؟ و پاسخ شما میتوانید با مراجعه به پروفایل، آدرس یا بازه تحویل سفارش خود را تغییر دهید.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>محل بازدید کنندگان
+                                    <small>ارائه جغرافیایی</small>
+                                </h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <div class="dashboard-widget-content">
+                                    <div class="col-md-4 hidden-small">
+                                        <h2 class="line_30">5 کشور برتر</h2>
+                                        <table class="countries_list">
+                                            <tbody>
+                                            
+                                            <tr>
+                                                <td><i class="flag-sprite flag-i flag-_r"></i> ایران</td>
+                                                <td class="fs15 fw700 text-right persian">100%</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td><i class="flag-sprite flag-a flag-_f"></i> افغانستان</td>
+                                                <td class="fs15 fw700 text-right persian">0%</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td><i class="flag-sprite flag-a flag-_l"></i> آلبانی</td>
+                                                <td class="fs15 fw700 text-right persian">0%</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td><i class="flag-sprite flag-d flag-_z"></i> الجزیره</td>
+                                                <td class="fs15 fw700 text-right persian">0%</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td><i class="flag-sprite flag-a flag-_o"></i> آنگولا</td>
+                                                <td class="fs15 fw700 text-right persian">0%</td>
+                                            </tr>
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="world-map-gdp" class="col-md-8 col-sm-12 col-xs-12" style="height:230px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Updated To-Do List -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>فهرست کارها
+                                    <small>
+                                        <a id="add_todo_text" style="cursor: pointer;" onclick="toggleAddTodoForm()">افزودن کار جدید</a>
+                                    </small>
+                                </h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <div id="add_todo_form" class="input-group hidden">
+                                    <input id="add_todo_inp" type="text" class="form-control" placeholder="متن کار جدید را وارد کنید">
+                                    <span class="input-group-btn">
+                                        <button id="add_todo_button" type="button" class="btn btn-primary" onclick="addTodo()">افزودن</button>
+                                    </span>
+                                </div>
+                                <ul id="todo_content" class="to_do">
+                                    
+                                    <li id="todo-1" class="todo-item">
+                                        <div class="todo-main">
+                                            <div class="todo-text">
+                                                <p>بروزرسانی محصولات انبار در سایت</p>
+                                            </div>
+                                            <div class="todo-checkbox">
+                                                <input id="checkbox-1" data-todo-id="1" type="checkbox" class="flat" checked="" onclick="toggleTodoStatus(1, this.checked)">
+                                            </div>
+                                        </div>
+                                        <div class="todo-actions">
+                                            <a><i class="fa fa-pencil"></i></a>
+                                            <a><i class="fa fa-close"></i></a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li id="todo-2" class="todo-item">
+                                        <div class="todo-main">
+                                            <div class="todo-text">
+                                                <p>هماهنگی با سرپرست فروش</p>
+                                            </div>
+                                            <div class="todo-checkbox">
+                                                <input id="checkbox-2" data-todo-id="2" type="checkbox" class="flat" checked="" onclick="toggleTodoStatus(2, this.checked)">
+                                            </div>
+                                        </div>
+                                        <div class="todo-actions">
+                                            <a><i class="fa fa-pencil"></i></a>
+                                            <a><i class="fa fa-close"></i></a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li id="todo-3" class="todo-item">
+                                        <div class="todo-main">
+                                            <div class="todo-text">
+                                                <p>اضافه کردن محصولات جدید</p>
+                                            </div>
+                                            <div class="todo-checkbox">
+                                                <input id="checkbox-3" data-todo-id="3" type="checkbox" class="flat" onclick="toggleTodoStatus(3, this.checked)">
+                                            </div>
+                                        </div>
+                                        <div class="todo-actions">
+                                            <a><i class="fa fa-pencil"></i></a>
+                                            <a><i class="fa fa-close"></i></a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End to do list -->
+                   <!-- Start of Weather Widget -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>وضعیت آب و هوا</h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content" id="weather_content">
+                                <weather-widget static-url="/static/vendors/weather-widget"></weather-widget>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Weather Widget -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <!-- footer content -->
+<footer class="hidden-print">
+    <div class="pull-right">
+      قالب پنل مدیریت وبسایت فروشگاهی طراحی بک اند <a href="#" class="text-info">سعید مسعودی</a> فرانت Gentelella
+    </div>
+    <div class="clearfix"></div>
+</footer>
+<!-- /footer content -->
+        <!-- /footer content -->
+    </div>
+</div>
+<div id="lock_screen">
+    <table>
+        <tr>
+            <td>
+                <div class="clock"></div>
+                <span class="unlock">
+                    <span class="fa-stack fa-5x">
+                      <i class="fa fa-square-o fa-stack-2x fa-inverse"></i>
+                      <i id="icon_lock" class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                </span>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- jQuery -->
+<script src="../static/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../static/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../static/vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="../static/vendors/nprogress/nprogress.js"></script>
+<!-- bootstrap-progressbar -->
+<script src="../static/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- iCheck -->
+<script src="../static/vendors/iCheck/icheck.min.js"></script>
+<!-- PNotify -->
+<script src="../static/vendors/pnotify/dist/pnotify.js"></script>
+<script src="../static/vendors/pnotify/dist/pnotify.buttons.js"></script>
+<script src="../static/vendors/pnotify/dist/pnotify.nonblock.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="../static/vendors/build/custom.js"></script>
+
+    <!-- bootstrap-daterangepicker -->
+    <script src="../static/vendors/moment/min/moment.min.js"></script>
+    <script src="../static/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Chart.js -->
+    <script src="../static/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../static/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../static/vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- Skycons -->
+    <script src="../static/vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../static/vendors/Flot/jquery.flot.js"></script>
+    <script src="../static/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../static/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../static/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../static/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../static/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../static/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../static/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- JQVMap -->
+    <script src="../static/vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../static/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <!-- morris.js -->
+    <script src="../static/vendors/raphael/raphael.min.js"></script>
+    <script src="../static/vendors/morris.js/morris.min.js"></script>
+    <script src="../static/vendors/weather-widget/weather-widget.js"></script>
+    <script>
+        
+        function init_morris_charts() {
+            if (typeof (Morris) === 'undefined') {
+                return;
+            }
+            if ($('#graph_bar').length) {
+                Morris.Bar({
+                    element: 'graph_bar',
+                    data: [
+                        
+                            {
+                                device: 'دسته بازی پلی استیش…',
+                                geekbench: 1,
+                                link: '/shop/ppk-11/%D8%AF%D8%B3%D8%AA%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%BE%D9%84%DB%8C-%D8%A7%D8%B3%D8%AA%DB%8C%D8%B4%D9%86-5-%D8%B3%D9%88%D9%86%DB%8C-%D9%85%D8%AF%D9%84-dalsense-wirlesese'
+                            },
+                        
+                            {
+                                device: 'ساعت هوشمند سامسونگ…',
+                                geekbench: 1,
+                                link: '/shop/ppk-14/%D8%B3%D8%A7%D8%B9%D8%AA-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-watch6-classic-47mm'
+                            },
+                        
+                            {
+                                device: 'تی شرت آستین کوتاه …',
+                                geekbench: 1,
+                                link: '/shop/ppk-15/%D8%AA%DB%8C-%D8%B4%D8%B1%D8%AA-%D8%A2%D8%B3%D8%AA%DB%8C%D9%86-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%D9%85%D8%B1%D8%AF%D8%A7%D9%86%D9%87'
+                            },
+                        
+                            {
+                                device: 'تلویزیون ال ای دی ه…',
+                                geekbench: 1,
+                                link: '/shop/ppk-16/%D8%AA%D9%84%D9%88%DB%8C%D8%B2%DB%8C%D9%88%D9%86-%D8%A7%D9%84-%D8%A7%DB%8C-%D8%AF%DB%8C-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-50nu7900-%D8%B3%D8%A7%DB%8C%D8%B2-55-%D8%A7%DB%8C%D9%86%DA%86'
+                            },
+                        
+                            {
+                                device: 'گوشی موبایل سامسونگ…',
+                                geekbench: 0,
+                                link: '/shop/ppk-12/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a55-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-256-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-8-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88%DB%8C%D8%AA%D9%86%D8%A7%D9%85'
+                            },
+                        
+                            {
+                                device: 'گوشی موبایل سامسونگ…',
+                                geekbench: 0,
+                                link: '/shop/ppk-13/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a15-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-128-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-6-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88%DB%8C%D8%AA%D9%86%D8%A7%D9%85'
+                            }
+                        
+                    ],
+                    xkey: 'device',
+                    ykeys: ['geekbench'],
+                    labels: ['تعداد فروش'],
+                    barRatio: 0.4,
+                    barColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
+                    xLabelAngle: 35,
+                    hideHover: 'auto',
+                    gridTextFamily: 'IRANSans',
+                    resize: true
+                }).on('click', function (i, row) {
+                    location.href = row.link;
+                });
+            }
+        }
+        
+
+        function init_chart_doughnut() {
+            if (typeof (Chart) === 'undefined') {
+                return;
+            }
+            if ($('.canvasDoughnut').length) {
+                var chart_doughnut_settings = {
+                    type: 'doughnut',
+                    tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+                    data: {
+                        labels: [
+                            
+                                "windows" ,
+                            
+                                "android" ,
+                            
+                                "ios" ,
+                            
+                                "mac" ,
+                            
+                                "linux" ,
+                            
+                                "other"
+                            
+                        ],
+                        datasets: [{
+                            data: [9, 0, 0, 0, 0, 2],
+                            backgroundColor: [
+                                "#40a911",
+                                "#9B59B6",
+                                "#E74C3C",
+                                "#ff9800",
+                                "#3498DB",
+                                "#797979"
+                            ],
+                            hoverBackgroundColor: [
+                                "#40a911",
+                                "#9B59B6",
+                                "#E74C3C",
+                                "#ff9800",
+                                "#3498DB",
+                                "#797979"
+                            ]
+                        }]
+                    },
+                    options: {
+                        legend: false,
+                        responsive: false
+                    }
+                }
+
+                $('.canvasDoughnut').each(function () {
+
+                    var chart_element = $(this);
+                    var chart_doughnut = new Chart(chart_element, chart_doughnut_settings);
+
+                });
+            }
+        }
+
+        function init_JQVmap() {
+            if (typeof (jQuery.fn.vectorMap) === 'undefined') {
+                return;
+            }
+            if ($('#world-map-gdp').length) {
+
+                $('#world-map-gdp').vectorMap({
+                    map: 'world_en',
+                    backgroundColor: null,
+                    color: '#ffffff',
+                    hoverOpacity: 0.7,
+                    selectedColor: '#666666',
+                    enableZoom: true,
+                    showTooltip: true,
+                    values : { "af": 0, "al": 0, "dz": 0, "ao": 0, "ag": 0, "ar": 0, "am": 0, "au": 0, "at": 0, "az": 0, "bs": 0, "bh": 0, "bd": 0, "bb": 0, "by": 0, "be": 0, "bz": 0, "bj": 0, "bt": 0, "bo": 0, "ba": 0, "bw": 0, "br": 0, "bn": 0, "bg": 0, "bf": 0, "bi": 0, "kh": 0, "cm": 0, "ca": 0, "cv": 0, "cf": 0, "td": 0, "cl": 0, "cn": 0, "co": 0, "km": 0, "cd": 0, "cg": 0, "cr": 0, "ci": 0, "hr": 0, "cy": 0, "cz": 0, "dk": 0, "dj": 0, "dm": 0, "do": 0, "ec": 0, "eg": 0, "sv": 0, "gq": 0, "er": 0, "ee": 0, "et": 0, "fj": 0, "fi": 0, "fr": 0, "ga": 0, "gm": 0, "ge": 0, "de": 0, "gh": 0, "gr": 0, "gd": 0, "gt": 0, "gn": 0, "gw": 0, "gy": 0, "ht": 0, "hn": 0, "hk": 0, "hu": 0, "is": 0, "in": 0, "id": 0, "ir": 1, "iq": 0, "ie": 0, "il": 0, "it": 0, "jm": 0, "jp": 0, "jo": 0, "kz": 0, "ke": 0, "ki": 0, "kr": 0, "undefined": 0, "kw": 0, "kg": 0, "la": 0, "lv": 0, "lb": 0, "ls": 0, "lr": 0, "ly": 0, "lt": 0, "lu": 0, "mk": 0, "mg": 0, "mw": 0, "my": 0, "mv": 0, "ml": 0, "mt": 0, "mr": 0, "mu": 0, "mx": 0, "md": 0, "mn": 0, "me": 0, "ma": 0, "mz": 0, "mm": 0, "na": 0, "np": 0, "nl": 0, "nz": 0, "ni": 0, "ne": 0, "ng": 0, "no": 0, "om": 0, "pk": 0, "pa": 0, "pg": 0, "py": 0, "pe": 0, "ph": 0, "pl": 0, "pt": 0, "qa": 0, "ro": 0, "ru": 0, "rw": 0, "ws": 0, "st": 0, "sa": 0, "sn": 0, "rs": 0, "sc": 0, "sl": 0, "sg": 0, "sk": 0, "si": 0, "sb": 0, "za": 0, "es": 0, "lk": 0, "kn": 0, "lc": 0, "vc": 0, "sd": 0, "sr": 0, "sz": 0, "se": 0, "ch": 0, "sy": 0, "tw": 0, "tj": 0, "tz": 0, "th": 0, "tl": 0, "tg": 0, "to": 0, "tt": 0, "tn": 0, "tr": 0, "tm": 0, "ug": 0, "ua": 0, "ae": 0, "gb": 0, "us": 0, "uy": 0, "uz": 0, "vu": 0, "ve": 0, "vn": 0, "ye": 0, "zm": 0, "zw": 0 },
+                    scaleColors: ['#E6F2F0', '#149B7E'],
+                    normalizeFunction: 'polynomial'
+                });
+
+            }
+        }
+
+        function init_gauge() {
+            if (typeof (Gauge) === 'undefined') {
+                return;
+            }
+            var chart_gauge_settings = {
+                lines: 12,
+                angle: 0,
+                lineWidth: 0.4,
+                pointer: {
+                    length: 0.75,
+                    strokeWidth: 0.042,
+                    color: '#1D212A'
+                },
+                limitMax: 'false',
+                colorStart: '#1ABC9C',
+                colorStop: '#1ABC9C',
+                strokeColor: '#F0F3F3',
+                generateGradient: true,
+                maxValue: 80
+            };
+            if ($('#chart_gauge_01').length) {
+
+                var chart_gauge_01_elem = document.getElementById('chart_gauge_01');
+                var chart_gauge_01 = new Gauge(chart_gauge_01_elem).setOptions(chart_gauge_settings);
+            }
+            if ($('#gauge-text').length) {
+                chart_gauge_01.maxValue = 100;
+                chart_gauge_01.animationSpeed = 20;
+                chart_gauge_01.set(100.00);
+                chart_gauge_01.setTextField(document.getElementById("gauge-text"));
+            }
+        }
+        function convertToPersianNumbers() {
+            const elements = document.querySelectorAll('.persian');
+            const persianNumbers = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+
+            elements.forEach(element => {
+                element.innerHTML = element.innerHTML.replace(/\d/g, digit => persianNumbers[digit]);
+            });
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            init_JQVmap();
+            init_chart_doughnut();
+            init_gauge();
+            initTodo();
+            convertToPersianNumbers();
+            
+                init_morris_charts();
+            
+        });
+    </script>
+
+</body>
+</html>

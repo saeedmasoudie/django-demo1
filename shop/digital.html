@@ -1,0 +1,954 @@
+﻿
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#b91c1c">
+<meta name="application-name" content="فروشگاه جنگو">
+<meta name="google-site-verification" content="verification_token">
+
+<link rel="icon" href="../media/images/site/icons8-d-64.png" sizes="16x16" type="image/png">
+<link rel="alternate" href="../example" type="application/rss+xml" title="RSS">
+<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/css/output.css">
+<link rel="stylesheet" href="../static/css/font.css">
+<!-- main -->
+<link rel="stylesheet" href="../static/css/main.css">
+<!-- TABS -->
+<link rel="stylesheet" href="../static/css/flowbite.min.css">
+<!-- Alerts -->
+<link rel="stylesheet" href="../static/css/toastify.css">
+
+    
+	<meta name="keywords" content="فروشگاه, کالا, خرید">
+    <meta name="description" content="لیست محصولات وبسایت فروشگاه جنگو">
+    <!-- Range -->
+    <link rel="stylesheet" href="../static/css/rangeInput.css">
+
+    <title>
+    کالا دیجیتال
+</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div>
+
+    <div id="announcement-placeholder"></div>
+    <a href="https://www.saeedemasoudi.ir" target="_blank">
+        <div id="hellobar-bar" class="regular">
+            <div class="hb-content-wrapper">
+                <div class="hb-text-wrapper">
+                    <div class="hb-headline-text">
+                        <p><span>این دمو فقط بصورت ظاهری میباشد و عملیات های ثبت کاربردی ندارد برای اطلاعات بیشتر کلیک کنید</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- TOP -->
+    <nav class="relative px-5 py-2 flex flex-wrap justify-between items-start pt-5 bg-white">
+        <a class="order-2" href="../index.htm">
+            <img class="w-36" src="../media/images/site/logo_KCEYK0g.png" alt="">
+        </a>
+        <div class="order-3 w-full mt-3 lg:mt-0 lg:w-5/12 lg:mr-[10%]">
+            <div class="relative">
+                <input type="search" id="default-search" class="sm:block w-full px-4 py-3 sm:pl-12 text-sm sm:text-base pl-8 text-red-900 placeholder:text-red-600 rounded-2xl text-right placeholder:text-sm focus:outline-red-400 border-2 border-red-400" placeholder="جستجو محصول">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-4">
+                    <img class="w-5 h-5 text-gray-500" src="../static/image/search.png" alt="">
+                </div>
+                <div class="absolute w-full bg-gray-50 shadow-2xl h-auto mt-2 z-50 rounded-2xl hidden" id="showModalSearch">
+                    <div id="search-spinner" class="mt-3 mb-5 flex items-center justify-center">
+                        <span class="loader"></span>
+                    </div>
+                    <div id="search_container" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 p-3"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="order-4 hidden lg:flex">
+            
+                    <a href="../user/login-36.html" class="flex items-center h-10 leading-10 px-3 mx-1 transition rounded-xl hover:bg-red-50">
+                        <img class="ml-1 w-6" src="../static/image/user.png" alt="">
+                        <span class="text-sm opacity-95">ورود | ثبت نام</span>
+                    </a>
+                
+                <div class="bg-white rounded-2xl shadow-md border-gray-50 text-sm absolute top-auto right-0 w-64 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                    <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                        <ul class="list-reset">
+                            
+                            <li class="relative border-b-2 border-red-300 pb-2" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                <a href="../user/profile.html" class="px-2 py-2 flex w-full items-start hover:bg-red-50 rounded-xl">
+                                    <span class="flex justify-center items-center opacity-90">
+                                        <img class="w-8 ml-2" src="../static/image/userNotImage.png" alt="">
+                                    پنل کاربری</span>
+                                </a>
+                            </li>
+                            <li class="relative pt-2" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                <a href="../user/orders.html" class="px-4 py-2 flex w-full items-start hover:bg-red-50 rounded-xl">
+                                    <span class="flex justify-center items-center text-sm opacity-90">
+                                        <img class="w-5 ml-1" src="../static/image/package.png" alt="">
+                                        سفارش ها
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                <a href="../user/favorites.html" class="px-4 py-2 flex w-full items-start hover:bg-red-50 rounded-xl">
+                                    <span class="flex justify-center items-center text-sm opacity-90">
+                                        <img class="w-5 ml-1" src="../static/image/heart.png" alt="">
+                                        علاقه مندی ها
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                <a href="product-comparison/compare/index.htm" class="px-4 py-2 flex w-full items-start hover:bg-red-50 rounded-xl">
+                                    <span class="flex justify-center items-center text-sm opacity-90">
+                                        <img class="w-5 ml-1" src="../static/image/comparison.png" alt="">
+                                         لیست مقایسه
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                <a href="../index.htm" class="px-4 py-2 flex w-full items-start hover:bg-red-50 rounded-xl">
+                                    <span class="flex justify-center items-center text-sm opacity-90">
+                                        <img class="w-5 ml-1" src="../static/image/exit.png" alt="">
+                                        خروج از حساب کاربری
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            <span class="block relative" x-data="{showChildren:false}" @click.away="showChildren=false" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                <a href="../user/login.html" class="flex items-center h-10 leading-10 px-3 cursor-pointer no-underline hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100">
+                    <img class="inline ml-1 w-5" src="../static/image/shopping-cart.png" alt="">
+                    <span class="text-sm text-neutral-800 hover:text-neutral-700 opacity-95">سبد خرید</span>
+                    <span>
+                        <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                    </span>
+                </a>
+                <div class="bg-white rounded-2xl shadow-md first-letter:border-2 border-gray-50 text-sm absolute top-auto left-0 w-72 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                    <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                        <ul class="list-reset flex flex-col gap-y-2">
+                            
+                                <li class="relative">
+                                    <div class=" warning-msg opacity-80 w-full text-sm">
+                                        <span class="flex justify-center items-center opacity-90">
+                                            <i class="fa fa-exclamation-triangle pl-2"></i>
+                                            <a class=" align-middle text-xs">برای مشاهده سبد خرید ابتدا وارد حساب کاربری خود شوید</a>
+                                        </span>
+                                    </div>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="order-1 lg:hidden">
+            <button class="navbar-burger flex items-center text-red-300 p-3">
+                <svg class="block h-4 w-4 fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <!-- DOWN -->
+    <div class="w-full">
+        <div class="py-2 px-5 bg-white shadow-stone-50 shadow-md hidden lg:block">
+            <div class="-mx-1">
+                <ul class="flex w-full flex-wrap items-center h-10">
+                    <li class="block relative">
+                        <a href="../index.htm" class="flex items-center h-10 text-sm leading-10 px-4 mx-1 transition text-gray-700 hover:text-red-500">
+                            <span>صفحه اصلی</span>
+                        </a>
+                    </li>
+                    <li class="block relative" x-data="{showChildren:false}">
+                        <a href="../blog/index.htm" class="flex items-center h-10 leading-10 px-3 text-sm mx-1 transition text-gray-700 hover:text-red-500">
+                            <span>وبلاگ</span>
+                        </a>
+                    </li>
+                    <li class="block relative" x-data="{showChildren:false}">
+                        <a href="index.htm" class="flex items-center h-10 leading-10 px-3 text-sm mx-1 transition text-gray-700 hover:text-red-500">
+                            <span>فروشگاه</span>
+                        </a>
+                    </li>
+                    
+                        <li class="block relative" x-data="{showChildren:false}">
+                            
+                            <a href="digital.html" class="flex items-center h-10 leading-10 px-3 text-sm mx-1 transition text-gray-700 hover:text-red-500" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                                <span class=" border-b-2 border-red-600">کالا دیجیتال</span>
+                                
+                                    <span>
+                                        <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                                    </span>
+                                
+                            </a>
+                            
+                                <div class="bg-white rounded-2xl shadow-md text-sm  opacity-[0.97] absolute top-auto right-0 min-w-full w-56 z-30 mt-3" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                                    <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                                        <ul class="list-reset">
+                                            
+                                                <li class="relative">
+                                                    <a href="console-extras.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">لوازم جانبی کنسول بازی سونی</span>
+                                                    </a>
+                                                </li>
+                                            
+                                                <li class="relative">
+                                                    <a href="mobile.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">موبایل</span>
+                                                    </a>
+                                                </li>
+                                            
+                                                <li class="relative">
+                                                    <a href="smart-watch.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">ساعت هوشمند</span>
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                    
+                        <li class="block relative" x-data="{showChildren:false}">
+                            
+                            <a href="cloth.html" class="flex items-center h-10 leading-10 px-3 text-sm mx-1 transition text-gray-700 hover:text-red-500" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                                <span>مد و پوشاک</span>
+                                
+                                    <span>
+                                        <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                                    </span>
+                                
+                            </a>
+                            
+                                <div class="bg-white rounded-2xl shadow-md text-sm  opacity-[0.97] absolute top-auto right-0 min-w-full w-56 z-30 mt-3" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                                    <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                                        <ul class="list-reset">
+                                            
+                                                <li class="relative">
+                                                    <a href="tshirt.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">تیشرت</span>
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                    
+                        <li class="block relative" x-data="{showChildren:false}">
+                            
+                            <a href="home-products.html" class="flex items-center h-10 leading-10 px-3 text-sm mx-1 transition text-gray-700 hover:text-red-500" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                                <span>لوازم خانگی</span>
+                                
+                                    <span>
+                                        <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                                    </span>
+                                
+                            </a>
+                            
+                                <div class="bg-white rounded-2xl shadow-md text-sm  opacity-[0.97] absolute top-auto right-0 min-w-full w-56 z-30 mt-3" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                                    <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                                        <ul class="list-reset">
+                                            
+                                                <li class="relative">
+                                                    <a href="tv.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">تلویزیون</span>
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                    
+                    <li class="block relative" x-data="{showChildren:false}" @click.away="showChildren=false">
+                        <a href="#" class="flex items-center h-10 leading-10 px-3 cursor-pointer text-sm no-underline hover:no-underline duration-100 mx-1 transition text-gray-700 hover:text-red-500" @click.prevent="showChildren=!showChildren" @mouseenter="showChildren=true" @mouseleave="showChildren=false">
+                            <span>صفحات</span>
+                            <span>
+                                <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                            </span>
+                        </a>
+                        <div class="bg-white rounded-2xl shadow-md text-sm  opacity-[0.97] absolute top-auto left-0 xl:right-0 min-w-full w-56 z-30 mt-3" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" @mouseenter="showChildren=true" @mouseleave="showChildren=false" style="display: none">
+                            <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                                <ul class="list-reset">
+                                    <li class="relative">
+                                        <a href="../blog/index.htm" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                            <span class="flex-1">وبلاگ</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../user/login.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                            <span class="flex-1">سبد خرید</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../faq.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                            <span class="flex-1">سوالات متداول</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../terms-and-conditions.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                            <span class="flex-1">شرایط و ضوابط</span>
+                                        </a>
+                                    </li>
+                                    
+                                        <li class="relative">
+                                            <a href="../user/login-36.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                <span class="flex-1">ورورد به حساب کاربری</span>
+                                            </a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block relative">
+                        <a href="../contact-us.html" class="flex items-center h-10 text-sm leading-10 px-4 mx-1 transition text-gray-700 hover:text-red-500">
+                            <span>ارتباط با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--MOBILE NAVBAR-->
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-5 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex justify-center items-center mb-4">
+                <a class="order-1" href="../index.htm">
+                    <img class="w-32" src="../media/images/site/logo_KCEYK0g.png" alt="">
+                </a>
+            </div>
+            <div>
+                <ul class="space-y-3">
+                    <li class="border-b">
+                        <div class="mt-0 mb-3 text-center space-y-5">
+                            <div>
+                                <div class="md:flex justify-center align-middle lg:inline-block py-2 px-4 text-sm text-neutral-800 rounded-xl hover:text-neutral-700 hover:bg-red-100 transition">
+                                    <a href="../user/login.html">
+                                        <img class="inline ml-1 w-5" src="../static/image/shopping-cart.png" alt="">
+                                        سبد
+                                        خرید
+                                    </a>
+                                </div>
+                                
+                                    <div class="md:flex justify-center align-middle lg:inline-block py-2 px-4 text-sm text-neutral-800 rounded-xl hover:text-neutral-700 hover:bg-red-100 transition">
+                                        <a href="../user/login-36.html">
+                                            <img class="inline ml-1 w-5" src="../static/image/user.png" alt="">
+                                            ورود | ثبت
+                                            نام
+                                        </a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative flex">
+                        <a href="../index.htm" class="flex justify-between items-center h-10 leading-10 text-sm opacity-90 px-3 cursor-pointer no-underline w-full hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100">
+                            <span>صفحه اصلی</span>
+                        </a>
+                    </li>
+                    <li class="relative flex">
+                        <a href="../blog/index.htm" class="flex justify-between items-center h-10 leading-10 text-sm opacity-90 px-3 cursor-pointer no-underline w-full hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100">
+                            <span>وبلاگ</span>
+                        </a>
+                    </li>
+                    <li class="relative flex">
+                        <a href="index.htm" class="flex justify-between items-center h-10 leading-10 text-sm opacity-90 px-3 cursor-pointer no-underline w-full hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100">
+                            <span>فروشگاه</span>
+                        </a>
+                    </li>
+                    
+                        <li class="relative flex" x-data="{showChildren:false}" @click.away="showChildren=false">
+                            <a href="digital.html" class="flex justify-between items-center h-10 leading-10 text-sm opacity-90 px-3 cursor-pointer no-underline w-full hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100" @click.prevent="showChildren=!showChildren">
+                                <span>کالا دیجیتال</span>
+                                
+                                    <span>
+                                        <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                                    </span>
+                                
+                            </a>
+                            
+                                <div class="bg-white rounded-2xl shadow-lg border-1 border-gray-50 text-sm absolute top-full right-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none">
+                                    <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                                        <ul class="list-reset">
+                                            
+                                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                                    <a href="console-extras.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">لوازم جانبی کنسول بازی سونی</span>
+                                                    </a>
+                                                </li>
+                                            
+                                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                                    <a href="mobile.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">موبایل</span>
+                                                    </a>
+                                                </li>
+                                            
+                                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                                    <a href="smart-watch.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">ساعت هوشمند</span>
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                    
+                        <li class="relative flex" x-data="{showChildren:false}" @click.away="showChildren=false">
+                            <a href="cloth.html" class="flex justify-between items-center h-10 leading-10 text-sm opacity-90 px-3 cursor-pointer no-underline w-full hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100" @click.prevent="showChildren=!showChildren">
+                                <span>مد و پوشاک</span>
+                                
+                                    <span>
+                                        <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                                    </span>
+                                
+                            </a>
+                            
+                                <div class="bg-white rounded-2xl shadow-lg border-1 border-gray-50 text-sm absolute top-full right-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none">
+                                    <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                                        <ul class="list-reset">
+                                            
+                                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                                    <a href="tshirt.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">تیشرت</span>
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                    
+                        <li class="relative flex" x-data="{showChildren:false}" @click.away="showChildren=false">
+                            <a href="home-products.html" class="flex justify-between items-center h-10 leading-10 text-sm opacity-90 px-3 cursor-pointer no-underline w-full hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100" @click.prevent="showChildren=!showChildren">
+                                <span>لوازم خانگی</span>
+                                
+                                    <span>
+                                        <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                                    </span>
+                                
+                            </a>
+                            
+                                <div class="bg-white rounded-2xl shadow-lg border-1 border-gray-50 text-sm absolute top-full right-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none">
+                                    <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                                        <ul class="list-reset">
+                                            
+                                                <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                                    <a href="tv.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                        <span class="flex-1">تلویزیون</span>
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                    
+                    <li class="relative flex" x-data="{showChildren:false}" @click.away="showChildren=false">
+                        <a href="" class="flex justify-between items-center h-10 leading-10 text-sm opacity-90 px-3 cursor-pointer no-underline w-full hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100" @click.prevent="showChildren=!showChildren">
+                            <span>صفحات</span>
+                            <span>
+                                <img class="w-4 mr-1" src="../static/image/chevron-down-login.png" alt="">
+                            </span>
+                        </a>
+                        <div class="bg-white rounded-2xl shadow-lg border-1 border-gray-50 text-sm absolute top-full right-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none">
+                            <div class="bg-white rounded-2xl w-full relative z-10 py-2 px-2">
+                                <ul class="list-reset">
+                                    <li class="relative">
+                                        <a href="../user/login.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                            <span class="flex-1">سبد خرید</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../faq.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                            <span class="flex-1">سوالات متداول</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../terms-and-conditions.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                            <span class="flex-1">شرایط و ضوابط</span>
+                                        </a>
+                                    </li>
+                                    
+                                        <li class="relative">
+                                            <a href="../user/login-36.html" class="px-4 py-2 flex w-full items-start hover:bg-red-100 rounded-lg transition no-underline hover:no-underline duration-100 cursor-pointer">
+                                                <span class="flex-1">ورورد به حساب کاربری</span>
+                                            </a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative flex">
+                        <a href="../contact-us.html" class="flex justify-between items-center h-10 leading-10 text-sm opacity-90 px-3 cursor-pointer no-underline w-full hover:no-underline duration-100 mx-1 transition rounded-xl hover:bg-red-100">
+                            <span>ارتباط با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- OPACITY SCREEN FOR SEARCH INPUT FOCUS -->
+    <div class="absolute w-full h-screen bg-gray-200 opacity-40 z-40 hidden" id="opacitiScreen" onclick="closeScreen()"></div>
+</div>
+<!-- BOTTOM NAVIGATION -->
+<div class="px-4 bg-white shadow-2xl w-full border fixed bottom-0 left-1/2 -translate-x-1/2 md:hidden z-50">
+    <div class="grid grid-cols-5">
+        <div class="flex-1 group">
+            
+                <a href="../user/login-36.html" class="flex items-end justify-center text-center mx-auto pt-2 w-full text-gray-800 group-hover:text-red-500 ">
+                    <span class="block pt-1 pb-1">
+                        <svg class="mx-auto fill-gray-800 group-hover:fill-red-600 " xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="" viewbox="0 0 256 256">
+                            <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z">
+                            </path>
+                        </svg>
+                        <span class="block text-xs py-1">ورود</span>
+                        
+                            <span class="block w-5 mx-auto h-1 group-hover:bg-red-500 rounded-full"></span>
+                        
+                    </span>
+                </a>
+            
+        </div>
+        <div class="flex-1 group">
+            <a href="../user/favorites.html" class="flex items-end justify-center text-center mx-auto pt-2 w-full text-gray-800 group-hover:text-red-500 ">
+                <span class="block pt-1 pb-1">
+                    <svg class="mx-auto fill-gray-800 group-hover:fill-red-600 " xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000000" viewbox="0 0 256 256">
+                        <path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z">
+                        </path>
+                    </svg>
+                    <span class="block text-xs py-1">علاقه مندی</span>
+                    
+                        <span class="block w-5 mx-auto h-1 group-hover:bg-red-500 rounded-full"></span>
+                    
+                </span>
+            </a>
+        </div>
+        <div class="flex-1 group">
+            <a href="../index.htm" class="flex items-end justify-center text-center mx-auto pt-2 w-full group-hover:text-red-500 ">
+                <span class="block pt-1 pb-1">
+                    <svg class="mx-auto " xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000000" viewbox="0 0 256 256">
+                        <path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z">
+                        </path>
+                    </svg>
+                    <span class="block text-xs py-1">صفحه اصلی</span>
+                    
+                        <span class="block w-5 mx-auto h-1 group-hover:bg-red-500 rounded-full"></span>
+                    
+                </span>
+            </a>
+        </div>
+        <div class="flex-1 group">
+            <a href="#default-search" class="flex items-end justify-center text-center mx-auto pt-2 w-full text-gray-800">
+                <span class="block pt-1 pb-1">
+                    <svg class="mx-auto fill-gray-800" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000000" viewbox="0 0 256 256">
+                        <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                        </path>
+                    </svg>
+                    <span class="block text-xs py-1">جستجو</span>
+                </span>
+            </a>
+        </div>
+        <div class="flex-1 group">
+            <a href="../user/login.html" class="flex items-end justify-center text-center mx-auto pt-2 w-full text-gray-800 group-hover:text-red-500 ">
+                <span class="block pt-1 pb-1">
+                    <svg class="mx-auto fill-gray-800 group-hover:fill-red-600 " xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000000" viewbox="0 0 256 256">
+                        <path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z">
+                        </path>
+                    </svg>
+                    <span class="block text-xs py-1">سبد خرید</span>
+                    
+                        <span class="block w-5 mx-auto h-1 group-hover:bg-red-500 rounded-full"></span>
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    <div class="max-w-[1440px] mx-auto px-3">
+        <div class="bg-white shadow-xl my-5 lg:my-10 rounded-xl md:rounded-2xl p-3 md:p-5">
+            <div class="bg-white mx-5 rounded-2xl mb-4">
+                <div class="py-3">
+                    <h3 class="text-xl font-semibold text-gray-800">کالا دیجیتال</h3>
+                </div>
+            </div>
+            <div class="md:flex">
+                <div class="md:w-4/12 lg:w-3/12">
+                    <div class="bg-white mx-5 mb-4 px-3 py-3 border rounded-xl">
+                        <div id="brands-checkbox">
+                            <div class="opacity-80 mb-1">
+                                برند:
+                            </div>
+                            <div class="space-y-1">
+                                
+                                    <div class="">
+                                        
+                                            <div class="flex items-center rounded-lg hover:bg-gray-100 opacity-80">
+                                                <input id="checkbox-item-21" type="checkbox" name="brands" value="samsung" class="w-4 h-4 bg-gray-100 border-gray-300 mr-3">
+                                                <label for="checkbox-item-21" class="w-full text-xs text-gray-900 rounded pr-1 py-2">سامسونگ</label>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <div class="flex justify-center items-center mb-5">
+                                    <button onclick="submit_form()" class="px-8 py-2 font-semibold text-center text-white bg-red-500 rounded-lg shadow-md text-xs">
+                                        ثبت فیلتر
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white mx-5 mb-4 px-3 py-3 border rounded-xl">
+                        <div class="wrapper">
+                            <div class="price-input flex flex-col-reverse gap-y-3 text-sm opacity-80">
+                                <div class="field">
+                                    <span>تا</span>
+                                    <div class="input-container">
+                                        <input type="number" id="max_price_inp" value="45000000">
+                                        <span class="formatted-value"></span>
+                                    </div>
+                                    <span class="currency">تومان</span>
+                                </div>
+                                <div class="field">
+                                    <span>از</span>
+                                    <div class="input-container">
+                                        <input type="number" id="min_price_inp" value="0">
+                                        <span class="formatted-value"></span>
+                                    </div>
+                                    <span class="currency">تومان</span>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <!-- <div class="progress"></div> -->
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="45000000" value="0" step="100">
+                                <input type="range" class="range-max" min="0" max="45000000" value="45000000" step="100">
+                            </div>
+                            <div class="flex justify-between opacity-70 text-xs my-3">
+                                <span>ارزان ترین</span>
+                                <span>گران ترین</span>
+                            </div>
+                            <div class="flex justify-center items-center mb-5">
+                                <form action="" method="get" id="PriceForm">
+                                    <input type="hidden" name="start_price" id="min_price_val" value="0">
+                                    <input type="hidden" name="end_price" id="max_price_val" value="45000000">
+                                    <input type="hidden" name="sort_by" id="sort_by" value="sold-number">
+                                </form>
+                                <button onclick="submit_form()" class="px-8 py-2 font-semibold text-center text-white bg-red-500 rounded-lg shadow-md text-xs">
+                                    ثبت فیلتر
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-8/12 lg:w-9/12">
+                    <div class="bg-white mx-1 rounded-2xl grid place-items-center">
+                        <div class="w-full">
+                            <div class="py-3 border-b">
+                                <div class="opacity-80 text-sm mb-2">
+                                    مرتب سازی:
+                                </div>
+                                <div class="flex flex-wrap gap-5 justify-start items-center">
+
+                                    <div class="opacity-70 text-xs hover:text-red-500 transition cursor-pointer " id="default-sort">
+                                        <a onclick="sort_by('sold-number')">پرفروش ترین</a>
+                                    </div>
+                                    <div class="opacity-70 text-xs hover:text-red-500 transition cursor-pointer" id="l-price-sort">
+                                        <a onclick="sort_by('l-price')">ارزان ترین</a>
+                                    </div>
+                                    <div class="opacity-70 text-xs hover:text-red-500 transition cursor-pointer" id="h-price-sort">
+                                        <a onclick="sort_by('h-price')">گران ترین</a>
+                                    </div>
+                                    <div class="opacity-70 text-xs hover:text-red-500 transition cursor-pointer" id="date-sort">
+                                        <a onclick="sort_by('added-date')">جدیدترین</a>
+                                    </div>
+                                    <div class="opacity-70 text-xs hover:text-red-500 transition cursor-pointer" id="views-sort">
+                                        <a onclick="sort_by('product-views')">پربازدیدترین</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                        <div class="bg-white rounded-2xl">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-3 px-1 rounded-2xl py-5">
+                                
+                                    <a href="ppk-12/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a55-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-256-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-8-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88%DB%8C%D8%AA%D9%86%D8%A7%D9%85.html" class="my-2 py-2 md:p-3 border rounded-xl flex items-center sm:inline hover:shadow-lg transition">
+                                        
+                                        <div class="image-box sm:mb-6">
+                                            <div>
+                                                
+                                                    <img class="hover:scale-105 transition rounded-md sm:rounded-3xl w-24 sm:w-full mx-auto" src="../media/images/products/1_Cf0kUTh.webp" alt="">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col w-full">
+                                            <span class="text-xs sm:text-sm opacity-90 mb-5">
+                                                <div class="leading-7 h-auto">
+                                                    گوشی موبایل سامسونگ مدل Galaxy A55 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام
+                                                </div>
+                                            </span>
+
+                                            
+                                                <div class="flex justify-end mb-2 text-sm opacity-80 pl-3 md:pl-0">
+                                                <div class="flex justify-center text-xs opacity-75"><div class="line-through">۲۸,۰۰۰,۰۰۰ تومان</div></div><div class="flex justify-center mt-1 mb-2 text-sm text-red-500">۲۷,۸۹۹,۰۰۰ تومان</div>
+                                                </div>
+                                            
+                                        </div>
+                                    </a>
+                                
+                                    <a href="ppk-13/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a15-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-128-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-6-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88%DB%8C%D8%AA%D9%86%D8%A7%D9%85.html" class="my-2 py-2 md:p-3 border rounded-xl flex items-center sm:inline hover:shadow-lg transition">
+                                        
+                                        <div class="image-box sm:mb-6">
+                                            <div>
+                                                
+                                                    <img class="hover:scale-105 transition rounded-md sm:rounded-3xl w-24 sm:w-full mx-auto" src="../media/images/products/1_BHeXAWN.webp" alt="">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col w-full">
+                                            <span class="text-xs sm:text-sm opacity-90 mb-5">
+                                                <div class="leading-7 h-auto">
+                                                    گوشی موبایل سامسونگ مدل Galaxy A15 دو سیم کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - ویتنام
+                                                </div>
+                                            </span>
+
+                                            
+                                                <div class="flex justify-end mb-2 text-sm opacity-80 pl-3 md:pl-0">
+                                                <div class="flex justify-center text-xs opacity-75"><div class="line-through">۱۳,۰۰۰,۰۰۰ تومان</div></div><div class="flex justify-center mt-1 mb-2 text-sm text-red-500">۱۲,۲۴۰,۰۰۰ تومان</div>
+                                                </div>
+                                            
+                                        </div>
+                                    </a>
+                                
+                                    <a href="ppk-11/%D8%AF%D8%B3%D8%AA%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%BE%D9%84%DB%8C-%D8%A7%D8%B3%D8%AA%DB%8C%D8%B4%D9%86-5-%D8%B3%D9%88%D9%86%DB%8C-%D9%85%D8%AF%D9%84-dalsense-wirlesese.html" class="my-2 py-2 md:p-3 border rounded-xl flex items-center sm:inline hover:shadow-lg transition">
+                                        
+                                        <div class="image-box sm:mb-6">
+                                            <div>
+                                                
+                                                    <img class="hover:scale-105 transition rounded-md sm:rounded-3xl w-24 sm:w-full mx-auto" src="../media/images/products/aeb1f8625ba86098a96c4d6da00829fa2d20ed94_1697831339.webp" alt="">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col w-full">
+                                            <span class="text-xs sm:text-sm opacity-90 mb-5">
+                                                <div class="leading-7 h-auto">
+                                                    دسته بازی پلی استیشن 5 سونی مدل Dalsense wirlesese
+                                                </div>
+                                            </span>
+
+                                            
+                                                <div class="flex justify-end mb-2 text-sm opacity-80 pl-3 md:pl-0">
+                                                    <div>۶,۴۰۰,۰۰۰ تومان</div>
+                                                </div>
+                                            
+                                        </div>
+                                    </a>
+                                
+                                    <a href="ppk-14/%D8%B3%D8%A7%D8%B9%D8%AA-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-watch6-classic-47mm.html" class="my-2 py-2 md:p-3 border rounded-xl flex items-center sm:inline hover:shadow-lg transition">
+                                        
+                                        <div class="image-box sm:mb-6">
+                                            <div>
+                                                
+                                                    <img class="hover:scale-105 transition rounded-md sm:rounded-3xl w-24 sm:w-full mx-auto" src="../media/images/products/1_sA29ILW.webp" alt="">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col w-full">
+                                            <span class="text-xs sm:text-sm opacity-90 mb-5">
+                                                <div class="leading-7 h-auto">
+                                                    ساعت هوشمند سامسونگ مدل Galaxy Watch6 Classic 47mm
+                                                </div>
+                                            </span>
+
+                                            
+                                                <div class="flex justify-end mb-2 text-sm opacity-80 pl-3 md:pl-0">
+                                                <div class="flex justify-center text-xs opacity-75"><div class="line-through">۱۵,۰۰۰,۰۰۰ تومان</div></div><div class="flex justify-center mt-1 mb-2 text-sm text-red-500">۱۳,۶۰۰,۰۰۰ تومان</div>
+                                                </div>
+                                            
+                                        </div>
+                                    </a>
+                                
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="pt-5 shadow-xl bg-white">
+    <!-- SERVICES -->
+    <div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-10 justify-items-center mb-10">
+            <div class="flex justify-center items-center flex-col rounded-3xl w-32 h-24">
+                <img class="w-20" src="../static/image/services/cash-on-delivery.svg" alt="">
+                <span class="text-sm opacity-80">
+          پرداخت درب منزل
+          </span>
+            </div>
+            <div class="flex justify-center items-center flex-col rounded-3xl w-32 h-24">
+                <img class="w-20" src="../static/image/services/days-return.svg" alt="">
+                <span class="text-sm opacity-80">
+            ضمانت بازگشت کالا
+          </span>
+            </div>
+            <div class="flex justify-center items-center flex-col rounded-3xl w-32 h-24">
+                <img class="w-20" src="../static/image/services/express-delivery.svg" alt="">
+                <span class="text-sm opacity-80">
+            تحویل سریع
+          </span>
+            </div>
+            <div class="flex justify-center items-center flex-col rounded-3xl w-32 h-24">
+                <img class="w-20" src="../static/image/services/original-products.svg" alt="">
+                <span class="text-sm opacity-80">
+            ضمانت اصل بودن
+          </span>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN -->
+    <div>
+        <a href="../index.htm" class="inline-block mb-4 mx-4 ">
+            <img src="../media/images/site/logo_KCEYK0g.png" alt="فروشگاه جنگو" class="w-48">
+        </a>
+    </div>
+    <div class="mx-auto shadow-lg">
+        <div class="flex flex-wrap">
+            <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
+                <div class="mb-10 w-full">
+                    <p class="mb-2 opacity-80">
+                        فروشگاه جنگو
+                    </p>
+                    <p class="mb-7 opacity-60 text-sm">فروشگاه جنگو به عنوان یکی از بروزترین فروشگاه های اینترنتی با بیش از هفت سال تجربه، با پایبندی به اعتماد مشتری، موفق شده تا با فروشگاه‌های معتبر ایران به یکی از بزرگ‌ترین فروشگاه اینترنتی کشور تبدیل شود. هر آنچه که فکرش را بکنید و به ذهن شما خطور می‌کند در اینجا پیدا خواهید کرد.</p>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+                <div class="mb-10 w-full">
+                
+                    <h4 class="mb-2 opacity-80">لینک های مفید:</h4>
+                    <ul class="grid gap-y-2">
+                        
+                        	<li>
+                                <a href="https://www.saeedemasoudi.ir" class="mb-2 text-sm hover:text-red-600 transition opacity-60 hover:opacity-100">وبسایت اصلی</a>
+                            </li>
+                        
+                        	<li>
+                                <a href="https://github.com/saeedmasoudie" class="mb-2 text-sm hover:text-red-600 transition opacity-60 hover:opacity-100">گیت هاب</a>
+                            </li>
+                        
+                        	<li>
+                                <a href="https://www.saeedemasoudi.ir" class="mb-2 text-sm hover:text-red-600 transition opacity-60 hover:opacity-100">خانه</a>
+                            </li>
+                        
+                        	<li>
+                                <a href="https://www.google.co.uk" class="mb-2 text-sm hover:text-red-600 transition opacity-60 hover:opacity-100">گوگل</a>
+                            </li>
+                        
+                        	<li>
+                                <a href="https://www.saeedemasoudi.ir/#contact" class="mb-2 text-sm hover:text-red-600 transition opacity-60 hover:opacity-100">تماس با ما</a>
+                            </li>
+                        
+                    </ul>
+                
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                <div class="mb-10 w-full">
+                
+                    <h4 class="mb-2 text-center opacity-80">شبکه های اجتماعی:</h4>
+                    <div class="mb-5 flex items-center justify-center">
+                        
+                        	<a href="https://t.me/Ericsaeed" title="instagram" class="mr-1 flex h-12 w-12 items-center justify-center p-2">
+                                <img src="../media/images/site/icon/tel.jpg" alt="" width="64" height="64">
+                            </a>
+                        
+                        	<a href="https://wa.me/989919935173" title="instagram" class="mr-1 flex h-12 w-12 items-center justify-center p-2">
+                                <img src="../media/images/site/icon/whatsapp.256x256.png" alt="" width="64" height="64">
+                            </a>
+                        
+                        	<a href="https://www.instagram.com/saeedmasoudie/" title="instagram" class="mr-1 flex h-12 w-12 items-center justify-center p-2">
+                                <img src="../media/images/site/icon/Instagram_icon.png" alt="" width="64" height="64">
+                            </a>
+                        
+                        	<a href="https://github.com/saeedmasoudie" title="instagram" class="mr-1 flex h-12 w-12 items-center justify-center p-2">
+                                <img src="../media/images/site/icon/github.png" alt="" width="64" height="64">
+                            </a>
+                        
+                    </div>
+                
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+                <div class="mb-10 w-full">
+                
+                    <h4 class="mb-2 text-center opacity-80">نماد های اینترنتی:</h4>
+                    <div class="flex items-center justify-center gap-x-5">
+                        
+                        	<script src="https://www.zarinpal.com/webservice/TrustCode" type="text/javascript"></script>
+                        
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COPYRIGHT -->
+    <div class="px-4 grid grid-cols-1 sm:grid-cols-2 border-t-[1px] py-5 text-gray-400">
+        <span class="text-xs text-center sm:text-right">
+            تمامی حقوق محفوظ است © 1403 - 2025
+        </span>
+        <span class="text-xs text-center sm:text-left">
+            طراحی شده توسط <a href="https://saeedemasoudi.ir/" target="_blank" class="opacity-100 text-red-500">سعید مسعودی</a>
+        </span>
+    </div>
+</footer>
+
+<!-- JQuery -->
+<script src="../static/js/jquery-3.7.1.min.js"></script>
+<!--DROPDOWNS FOR NAVBAR-->
+<script src="../static/js/flowbite.bundle.js"></script>
+<script src="../static/js/alpine.js" defer=""></script>
+<!--MOBILE NAVBAR-->
+<script src="../static/js/navbar.js"></script>
+<!-- TOAST -->
+<script src="../static/js/toastify.js"></script>
+<!-- SHOW MODAL SEARCH -->
+<script src="../static/js/searchBox.js"></script>
+
+    <!-- Range -->
+    <script src="../static/js/rangeinput.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            initializeValues();
+        });
+    </script>
+
+</body>
+</html>

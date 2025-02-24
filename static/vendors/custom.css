@@ -1,0 +1,282 @@
+.handCursor {
+    cursor: pointer;
+}
+
+.scrollable-div {
+    height: 200px;
+    overflow-y: auto;
+}
+.errorlist {
+    list-style: none;
+    color: #e74c3c;
+    padding-right: 0;
+}
+
+.ck.ck-dropdown.ck-heading-dropdown .ck-dropdown__button .ck-button__label {
+    font-family: 'IRANSans';
+}
+
+[dir=rtl] .ck.ck-button .ck-button__label, [dir=rtl] a.ck.ck-button .ck-button__label {
+    font-family: 'IRANSans';
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.make-center {
+    margin-right: 40%;
+}
+
+.tagsinput input {
+    font-family: 'IRANSans' !important;
+}
+
+.align-middle {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+input[type="file"] {
+    position: relative;
+}
+
+input[type="file"]::file-selector-button {
+    width: 136px;
+    color: transparent;
+}
+
+/* Faked label styles and icon */
+input[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+    font-family: FontAwesome;
+    top: 10px;
+    right: 16px;
+    height: 20px;
+    width: 20px;
+    content: "\f093";
+}
+
+input[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+    top: 11px;
+    right: 40px;
+    color: #0964b0;
+    content: "بارگذاری فایل";
+}
+
+/* ------- From Step 1 ------- */
+
+/* file upload button */
+input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-left: 16px;
+    transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+}
+
+/* ------------------------ */
+
+.ck-word-count__words {
+    margin-left: 10px;
+}
+
+.gallery_input {
+    height: 150px;
+    margin: 5px
+}
+
+.d_flex {
+    display: flex;
+}
+
+.pt_5 {
+    padding-top: 5px !important;
+}
+
+.pt_10 {
+    padding-top: 10px;
+}
+
+.pr_5 {
+    padding-right: 5px !important;
+}
+
+.pl_5 {
+    padding-left: 5px !important;
+}
+.pb_5 {
+    padding-bottom: 5px !important;
+}
+
+.text_size_sm{
+    font-size: medium;
+}
+
+.small_inp {
+    width: 120px !important;
+    margin-right: 10px;
+}
+.extra_small_inp {
+    width: 70px !important;
+    margin-right: 10px;
+}
+
+.datepicker-plot-area {
+    font-family: 'IRANSans' !important;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.on_img_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.show_color{
+    width: 15px;
+    height: 15px;
+    margin:auto;
+    display: inline-block;
+    border: 1px solid gray;
+    vertical-align: middle;
+    border-radius: 2px;
+    background: var(--c)
+}
+.has-feedback label~.form-control-feedback{
+    top: 22px;
+    margin: 10px;
+    padding-right: 2px;
+}
+
+.btn-right-img{
+    left: unset;
+    right: 20%;
+}
+.btn-left-img{
+    left: 35%;
+}
+.label {
+    margin-top: 0.5rem;
+}
+
+.pct-green{
+    color: #40a911;
+}
+.pct-purple{
+    color: #9B59B6;
+}
+.pct-red{
+    color: #E74C3C;
+}
+.pct-orange{
+    color: #ff9800;
+}
+.pct-blue{
+    color: #3498DB;
+}
+.pct-gray{
+    color: #797979;
+}
+.jqvmap-zoomin, .jqvmap-zoomout{
+    padding: 1px !important;
+}
+*[dir=rtl] table.dataTable th.dt-type-numeric, *[dir=rtl] table.dataTable th.dt-type-date, *[dir=rtl] table.dataTable td.dt-type-numeric, *[dir=rtl] table.dataTable td.dt-type-date{
+    text-align: center !important;
+}
+
+.to_do {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    direction: rtl; /* Ensure the correct text direction */
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.todo-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-checkbox {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.todo-checkbox input {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.todo-text {
+    flex-grow: 1;
+    word-break: break-word;
+    line-height: 1.5;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start; /* Align icons to the left */
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.todo-actions a {
+    cursor: pointer;
+    color: #555;
+    font-size: 16px;
+}
+
+.todo-actions a:hover {
+    color: #000;
+}
+
+.todo-actions .red {
+    color: #e74c3c;
+}
+
+.todo-actions .red:hover {
+    color: #c0392b;
+}

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام</title>
+
+    <link rel="stylesheet" href="../static/css/output.css">
+    <link rel="stylesheet" href="../static/css/font.css">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+<div class="flex justify-center items-center text-right h-screen w-96 mx-auto">
+    <div class="shadow-xl rounded-2xl p-8 bg-white">
+        <form action="/user/register" method="POST">
+            <input type="hidden" name="csrfmiddlewaretoken" value="y3lHbroMWxc5jUGBSytLCb8WcIvYWamuUH5DmqMjD5K1UcWIG1CTI6OegR8JMKmh">
+            <div class="mb-2">
+                <a href="../index.htm">
+                    
+                    <img src="../media/images/site/logo_KCEYK0g.png" alt="" class="w-36 mx-auto">
+                    
+                </a>
+            </div>
+            <div class="opacity-80 text-lg mb-5">
+                ثبت نام
+            </div>
+            <div class="text-xs opacity-70 mb-2">
+                ایمیل خود را وارد کنید:
+            </div>
+            <div class="mb-2">
+                <input type="email" name="email" class="w-full drop-shadow-lg outline-none rounded-2xl py-2 text-center" maxlength="320" required="" id="id_email">
+            </div>
+            
+            <div class="text-xs opacity-70 mb-2">
+                رمز عبور
+            </div>
+            <div class="mb-2">
+                <input type="password" name="password" class="w-full drop-shadow-lg outline-none rounded-2xl py-2 text-center" required="" id="id_password">
+            </div>
+            
+            <div class="text-xs opacity-70 mb-2">
+                تکرار رمز عبور
+            </div>
+            <div class="mb-2">
+                <input type="password" name="r_password" class="w-full drop-shadow-lg outline-none rounded-2xl py-2 text-center" required="" id="id_r_password">
+            </div>
+            
+            <div class="">
+                <script src="../recaptcha/api.js?render=6LdmWMwqAAAAAPKoe7COURdHjQ1vOgnSBuLgefgI&h1=fa"></script>
+<script type="text/javascript">
+    var element
+    grecaptcha.ready(function() {
+        element = document.querySelector('.g-recaptcha[data-widget-uuid="4c7f8e5e592449cbb635152a9acd00fa"]');
+        element.form.addEventListener('submit', recaptchaFormSubmit);
+    });
+    function recaptchaFormSubmit(event) {
+        event.preventDefault();
+        
+        grecaptcha.execute('6LdmWMwqAAAAAPKoe7COURdHjQ1vOgnSBuLgefgI', {})
+        
+        .then(function(token) {
+            console.log("reCAPTCHA validated for 'data-widget-uuid=\"4c7f8e5e592449cbb635152a9acd00fa\"'. Setting input value...")
+            element.value = token;
+            element.form.submit();
+        });
+    }
+</script>
+
+<input type="hidden" name="captcha" class="g-recaptcha" required_score="None" data-sitekey="6LdmWMwqAAAAAPKoe7COURdHjQ1vOgnSBuLgefgI" id="id_captcha" data-widget-uuid="4c7f8e5e592449cbb635152a9acd00fa" data-callback="onSubmit_4c7f8e5e592449cbb635152a9acd00fa" data-size="normal">
+            </div>
+            
+            <div class="text-center mt-5 mb-3">
+                <button class="bg-red-500 hover:bg-red-600 transition text-white opacity-80 rounded-2xl w-full py-2" type="submit">
+                    ثبت نام
+                </button>
+            </div>
+            <div class="text-xs opacity-80 mb-3">
+                ثبت نام شما به منظور پذیرش
+                <a href="../terms-and-conditions.html" target="_blank" class="text-red-500">شرایط و ضوابط</a>
+                 فروشگاه جنگو می باشد
+            </div>
+            <div class="text-xs opacity-80 mb-3">
+                اگر کد فعال سازی برای شما ارسال نشده می توانید از قسمت
+                <a href="forget-password.html" class="text-red-500">فراموشی رمز</a>
+                کد را مجدد ارسال کنید
+            </div>
+            <div class="text-xs opacity-80">
+                حساب کاربری دارید؟
+                <a href="login-36.html" class="text-red-500">ورود به جساب کاربری</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
